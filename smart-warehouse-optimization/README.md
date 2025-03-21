@@ -1,12 +1,75 @@
-# React + Vite
+# 📦 Smart Warehouse Optimization 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💡 Project Overview
 
-Currently, two official plugins are available:
+Smart Warehouse Optimization is a React-based web application that helps warehouse managers **optimize storage** by selecting the best combination of items to store using the **0/1 Knapsack Algorithm**. The system maximizes the total value of stored items without exceeding the warehouse capacity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+│   ├── ItemForm.jsx           // Form to add new items (name, weight, value)
+│   ├── ItemList.jsx           // Displays the list of added items
+│   └── OptimizationResult.jsx // Displays optimized selection and total value
+│
+├── utils/
+│   └── knapsackSolver.js      // Contains the 0/1 Knapsack Algorithm logic
+│
+└── App.jsx                    // Main component managing states and rendering
+```
+
+---
+
+## ⚙️ Features
+
+✅ Add items with name, weight, and value  
+✅ View all added items dynamically  
+✅ Run optimization to select the best combination of items  
+✅ Display optimized result with selected items and total value  
+✅ Simple and clean UI for easy interaction
+
+---
+
+## 🧠 Tech Stack
+
+- **React.js** (Frontend Framework)
+- **JavaScript (ES6+)**
+- **0/1 Knapsack Algorithm (Dynamic Programming)**
+- **CSS / Tailwind CSS (optional for styling)**
+
+---
+
+## 📈 How It Works
+
+The 0/1 Knapsack Algorithm takes:
+
+- `items[]` (each with weight and value)
+- `capacity` of the warehouse
+
+It returns:
+
+- Optimal list of items to store
+- Maximum achievable total value within the capacity
+
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Node.js and npm installed
+
+### 🔧 Installation
+
+```bash
+git clone https://github.com/codeMaestro78/Smart_warehouse_optimization.git
+cd smart-warehouse-optimization
+npm install
+npm run dev
+```
+
+
